@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya | MERN Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- VS Code style tab bar used as the main navigation -->
+  <nav class="tabbar" aria-label="Main navigation">
+    <div class="tabbar__title">
+      <span class="dot dot--red"></span>
+      <span class="dot dot--yellow"></span>
+      <span class="dot dot--green"></span>
+      <span class="tabbar__label">aditya-portfolio — VS Code</span>
+    </div>
+    <div class="tabbar__tabs">
+      <a href="#home" class="tab tab--active"><span class="tab__icon">◆</span>index.html</a>
+      <a href="#about" class="tab"><span class="tab__icon">js</span>about.js</a>
+      <a href="#skills" class="tab"><span class="tab__icon">{}</span>skills.json</a>
+      <a href="#projects" class="tab"><span class="tab__icon">▤</span>projects.md</a>
+      <a href="#contact" class="tab"><span class="tab__icon">@</span>contact.txt</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO: terminal window -->
+    <section id="home" class="hero">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+          <span class="terminal__path">bash — ~/aditya-portfolio</span>
+        </div>
+        <div class="terminal__body">
+          <p class="line"><span class="prompt">$</span> git clone https://github.com/aditya/portfolio.git</p>
+          <p class="line line--muted">Cloning into 'portfolio'... done.</p>
+          <p class="line"><span class="prompt">$</span> whoami</p>
+          <h1 class="line line--result">Aditya Kumar</h1>
+          <p class="line"><span class="prompt">$</span> cat role.txt</p>
+          <p class="line line--result line--role">Aspiring MERN Stack Developer</p>
+          <p class="line"><span class="prompt">$</span> <span class="cursor">▌</span></p>
+        </div>
+      </div>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="panel">
+      <p class="filepath">about.js</p>
+      <div class="code-block">
+        <pre><code><span class="kw">const</span> <span class="var">aditya</span> = {
+  <span class="key">status</span>: <span class="str">"Learning in public, one commit at a time"</span>,
+  <span class="key">focus</span>: <span class="str">"MongoDB · Express · React · Node.js"</span>,
+  <span class="key">bio</span>: <span class="str">"Just started my MERN stack bootcamp — figuring out
+    Git, GitHub and VS Code today, building real projects
+    tomorrow. I like breaking things down into small,
+    testable steps and shipping consistently."</span>,
+  <span class="key">currentlyLearning</span>: [<span class="str">"Version Control"</span>, <span class="str">"REST APIs"</span>, <span class="str">"React Hooks"</span>]
+};</code></pre>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="panel">
+      <p class="filepath">skills.json</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5 &amp; CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Database</h3>
+          <ul>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>VS Code</li>
+            <li>Command Line</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="panel">
+      <p class="filepath">projects.md</p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <span class="project-card__tag">01</span>
+          <h3>Portfolio Website</h3>
+          <p>My first Git-tracked project — built with semantic HTML and external CSS, pushed straight from VS Code to GitHub.</p>
+          <div class="project-card__stack">
+            <span>HTML</span><span>CSS</span><span>Git</span>
+          </div>
+        </article>
+        <article class="project-card project-card--placeholder">
+          <span class="project-card__tag">02</span>
+          <h3>MERN To-Do App</h3>
+          <p>Coming soon — a full CRUD app connecting React on the frontend to an Express + MongoDB backend.</p>
+          <div class="project-card__stack">
+            <span>React</span><span>Node</span><span>MongoDB</span>
+          </div>
+        </article>
+        <article class="project-card project-card--placeholder">
+          <span class="project-card__tag">03</span>
+          <h3>Next Build</h3>
+          <p>This slot is reserved for whatever I ship next in the bootcamp. Check back soon.</p>
+          <div class="project-card__stack">
+            <span>TBD</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel panel--contact">
+      <p class="filepath">contact.txt</p>
+      <div class="contact-box">
+        <h2>Let's build something together</h2>
+        <p>Open to internships, collaborations, and anyone who wants to talk code.</p>
+        <div class="contact-links">
+          <a href="mailto:aditya@example.com" class="btn btn--primary">Email Me</a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aditya Kumar — built with HTML &amp; external CSS, tracked by Git.</p>
+  </footer>
+
+</body>
+</html>
